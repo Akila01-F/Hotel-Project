@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' ,sans-serif ;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(./pexels-mark-angelo-sampan-1587927.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0.8%;
+    position: relative;
+}
+
+.text-box{
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+}
+
+.text-box p{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.text-box h1{
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    animation: move 8s ease-out;
+}
+@keyframes move{
+    50%{
+        transform: translateX(80px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+    
+.text-box h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.text-box .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.text-box a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+}
+
+.text-box a span{
+    font-size: 30px;
+    line-height: 15px;
+}
+
+.container_bb{
+    width: 100%;
+    height: 20vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(./pexels-luis-quintero-3689545-2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0.8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 50%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+}
+
+
+nav ul li a:hover::after{
+    width: 50%;
+}
+
+
+
+
+
+.footer{
+    background-image: url(pexels-luis-quintero-3689545-2.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 0.8%;
+}
+
+.footer_container{
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 5rem;
+}
+
+.footer_l_col h3{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.footer_l_col h4{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.footer_l_col p{
+    margin-bottom: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.footer_l_col p:hover{
+    color: var(--primary-color-dark);
+}
+
+
+@media (width<900px){
+    .container form {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .text-box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .nav {
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .nav ul {
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .text-box .row{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .text-box h1{
+        grid-template-columns: repeat(2,fr);
+        gap: 1rem;
+    }
+      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
